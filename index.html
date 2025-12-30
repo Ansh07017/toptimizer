@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toptimizer — System Optimizer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand-primary: #7117EA;
+            --brand-bg: #020617;
+            --brand-surface: rgba(15, 23, 42, 0.8);
+        }
+        body { 
+          font-family: 'Inter', sans-serif; 
+          background-color: var(--brand-bg);
+          color: #f8fafc;
+          overflow: hidden;
+        }
+        .frosted-obsidian {
+          background: var(--brand-surface);
+          backdrop-filter: blur(20px);
+          border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .text-brand { color: var(--brand-primary); }
+        .bg-brand { background-color: var(--brand-primary); }
+        .border-brand { border-color: var(--brand-primary); }
+        
+        .brand-gradient {
+          background: linear-gradient(135deg, var(--brand-primary) 0%, #a855f7 100%);
+        }
+        
+        .brand-text-gradient {
+          background: linear-gradient(135deg, var(--brand-primary) 0%, #a855f7 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar { width: 3px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(113, 23, 234, 0.2); border-radius: 10px; }
+        
+        .recharts-polar-grid-concentric-polygon {
+          stroke: rgba(255, 255, 255, 0.05);
+        }
+        .recharts-polar-angle-axis-line {
+          stroke: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "d3": "https://esm.sh/d3@^7.9.0",
+    "recharts": "https://esm.sh/recharts@^3.6.0"
+  }
+}
+</script>
+</head>
+<body class="antialiased">
+    <div id="root"></div>
+</body>
+</html>

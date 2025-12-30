@@ -1,0 +1,8 @@
+{
+  "name": "Toptimizer",
+  "description": "An advanced student productivity platform using graph-based knowledge mapping and Gemini AI to optimize learning paths and schedules.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
